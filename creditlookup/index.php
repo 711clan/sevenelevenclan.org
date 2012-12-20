@@ -91,9 +91,9 @@
             
             $sql = "SELECT *
             FROM contime
-            WHERE name like '%" . $trimmed . "%'
+            WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
             order by name
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
             
             switch ($_GET['sort_by']) {
                 case 'name':
@@ -101,35 +101,35 @@
                     FROM contime
                     WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
                     order by name
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
                     break;
                 case 'steamid':
                     $sql = "SELECT *
                     FROM contime
                     WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
                     order by authid
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
                     break;
                 case 'credits':
                     $sql = "SELECT *
                     FROM contime
                     WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
                     order by time_all DESC
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
                     break;
                 case 'last_time':
                     $sql = "SELECT *
                     FROM contime
                     WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
                     order by time_last DESC
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
                     break;
                 default:
                     $sql = "SELECT *
                     FROM contime
                     WHERE name like '%" . mysql_real_escape_string($trimmed) . "%'
                     order by name
-    LIMIT " . ($_GET['start'] ? $_GET['start'] : 0) . ", $numLimit";
+    LIMIT " . mysql_real_escape_string(($_GET['start'] ? $_GET['start'] : 0)) . ", " . mysql_real_escape_string($numLimit);
                     break;
             }
             
