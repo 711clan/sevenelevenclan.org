@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:#111111;
+	color:#888888;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.mainCont {
+	/*width:900px;*/
+	/*min-height:603px;*/
+	margin:auto auto;
+	/*background-image:url(backmid.png);
+	background-position:center;
+	background-repeat:repeat-y;
+	margin-top:-10px;
+	margin-bottom:-16px;*/
+}
+
+.leftFloat {
+	width:150px;
+	float:left;
+	border-right:1px #999 solid;
+	margin:20px 20px 20px 0;
+}
+
+.rightFloat {
+	/*width:720;*/
+	margin:10px 20px 10px 170px;
+	text-shadow:3px 3px #333333;
+	text-align:justify;
+}
+
+a {
+	padding:10px 0 10px 20px;
+	display:block;
+	margin-right:5px;
+	margin-bottom:3px;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+a:first-letter {
+	font-size:18px;
+	color:#888;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+	color:#CCCCCC;
+	background-color:#222222;
+}
+
+a:hover {
+	background-color:#333333;
+	text-decoration:underline;
+	border-left:4px #999 solid;
+	padding-left:16px;
+}
+
+a#activeLink {
+	background-color:#333333;
+	border-left:4px #999 solid;
+	padding-left:16px;
+}
+
+a#navImportant {
+	background-color:#333;
+	text-decoration:underline;
+	border:#777 4px solid;
+	padding-left:16px;
+}
+
+a#navImportant:first-letter {
+	font-size:18px;
+	color:#CCCCCC;
+}
+
+a#navImportant:hover {
+	background-color:#333;
+	text-decoration:underline;
+	border:#555 4px solid;
+	padding-left:16px;
+}
+
+.info {
+	margin-top:20px;
+	margin-left:20px;
+	font-size:16px;
+	color:#FFF;
+	text-shadow:none;
+}
+
+li {
+	list-style-type:square;
+}
+
+ul ul li {
+	margin-left:-20px;
+	list-style-type:none;
+	padding-bottom:5px;
+}
+
+.right {
+	text-align:right;
+}
+
+table {
+	border-collapse:collapse;
+	margin-left:-25px;
+	text-align:left;
+}
+
+.command {
+	width:110px;
+	background-color:#333;
+}
+
+.menuType {
+	width:150px;
+	background-color:#333;
+}
+
+.description {
+	background-color:#222222;
+	padding-right:5px;
+}
+
+td {
+	border:1px solid black;
+	padding:5px 5px 5px 10px;
+	vertical-align:top;
+}
+
+.sayCommand {
+	font-family:"Courier New", Courier, monospace;
+	text-transform:uppercase;
+	font-size:20px;
+	padding-left:8px;
+	padding-right:8px;
+}
+
+.cleanTable {
+	border:none;
+}
+
+.cleanTD {
+	border:none;
+}
+
+#buyCashTable {
+	margin-left:100px;
+}
