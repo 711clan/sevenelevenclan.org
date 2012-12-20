@@ -1,0 +1,638 @@
+/*
+#######################################
+BASIC
+#######################################
+*/
+body{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	background-color: #060606;
+	color: #333333;
+	font-family: Helvetica, Verdana, Arial;
+	}
+form{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	}
+a{
+	outline: none;
+	}
+acronym, abbr{
+	cursor: help;
+	border-bottom: 1px dotted #333333;
+	font-family: Georgia, Verdana, Arial;
+	}
+.button{
+	cursor: hand;
+	}
+.clear{
+	clear: both;
+	}
+.center{
+	text-align: center;
+	}
+#gallery img{
+	border: 0px!important;
+	}
+*:focus{
+	outline: none;
+	}
+.sticky{
+	}
+.bypostauthor{
+	}
+label {
+	display: block;
+	}
+/*
+#######################################
+WRAPPERS
+#######################################
+*/
+div#wrapper{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	}
+div#mainWrapper{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	}
+div#main{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	width: 960px;
+	}
+div#entries{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left:0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	float: left;
+	width: 645px;
+	overflow: hidden;
+	}
+div#entries-full{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left:0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	}
+div#sidebar{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	float: right;
+	width: 300px;
+	}
+/*
+#######################################
+Headers
+#######################################
+*/
+div#headerWrapper{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	}
+div#header{
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 960px;
+	}
+div#header h1{
+	margin-top: 25px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: left;
+	font-size: 58px;
+	line-height: 58px;
+	}
+div#header h1 a{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #DDDDDD;
+	text-shadow: #909090 2px 2px 2px;
+	font-family: Georgia, Garamond, Arial;
+	}
+div#header h1 a:hover{
+	color: #FFFFFF;
+	}
+div#header h2{
+	margin-top: 52px;
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: normal;
+	color: #606060;
+	text-decoration: none;
+	float: left;
+	border-left: 1px solid #606060;
+	}
+a#iconFeed{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	width: 33px;
+	height: 33px;
+	cursor: pointer;
+	float: right;
+	background-image: url(../images/icons_feed.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: block;
+	text-indent: -9999px;
+	position: relative;
+	top: 60px;
+	right: -200px;
+	}
+a#iconFeed:hover{
+	background-image: url(../images/icons_feed_hover.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	}
+/*
+#######################################
+Search bar
+#######################################
+*/
+div#searchWrapper{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+   	width: 200px;
+	height: 30px;
+	float: right;
+	position: relative;
+	top: 15px;
+	right: 0px;
+	}
+div#search{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+   	width: 200px;
+	height: 30px;
+	background-image: url(../images/search.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	position: relative;
+	}
+label.screen-reader-text{
+	display: none;
+	}
+div#search #s{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	float: left;
+	border: 0px;
+    	width: 160px;
+	height: 20px;
+	color: #333333;
+	font-family: Helvetica, Verdana, Tahoma, Arial;
+	font-size: 12px;
+	background-color: transparent;
+	}
+div#search #searchsubmit{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	border: 0px;
+	background-color: transparent;
+	text-indent: -9999px;
+	}
+div#searchWrapper #searchsubmit:hover{
+	background-image: url(../images/search_button_hover.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	}
+/*
+#######################################
+BOXES
+#######################################
+*/
+div#boxWrapper{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	background-color: #0A0A0A;
+	background-image: url(../images/base_03.png);
+	background-position: center center;
+	background-repeat: repeat;
+	}
+div#box{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 15px;
+	padding-right: 0px;
+	width: 960px;
+	}
+div#boxLeft{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	float:left;
+	width: 310px;
+	}
+div#boxCenter{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	float:left;
+	width: 310px;
+	}
+div#boxRight{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	float:left;
+	width: 310px;
+	}
+/*
+#######################################
+CALENDAR
+#######################################
+*/
+#wp-calendar{
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	width: 100%;
+	font-size: 12px;
+	}
+#wp-calendar th{
+	text-align: center;
+	background-color: #0E0E0E;
+	font-size: 12px;
+	}
+#wp-calendar td{
+	text-align:center;
+	background-color: #0E0E0E;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	}
+#wp-calendar td.pad{
+	background-color: transparent!important;
+	}
+/*
+#######################################
+Comments
+#######################################
+*/
+.commentlist{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	list-style: none;
+	}
+.commentlist ul{
+	list-style: none;
+	}
+div#respond, div#comments{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	color: #404040;
+	text-align: justify;
+	font-size: 12px;
+	line-height: 18px;
+	}
+div#respond a, div#comments a{
+	color: #9E9E9E;
+	text-decoration: none;
+	}
+div#respond a:hover, div#comments a:hover{
+	color: #333333;
+	text-decoration: underline;
+	}
+div#respond h3, div#comments h3{
+	margin-top: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: normal;
+	color: #DDDDDD;
+	text-shadow: #7E7E7E 1px 1px 1px;
+	font-family: Georgia, Garamond, Arial;
+	}
+div#respond input, div#respond textarea, div#respond select, div#respond button{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-right: 4px;
+	background-color: #0E0E0E;
+	border: 1px solid #333333;
+	border-radius-top-left: 5px; /* CSS3 */
+	-webkit-border-top-left-radius: 5px; /* Safari,Google Chrome */
+	-moz-border-radius-topleft: 5px; /* Firefox */
+	border-radius-top-right: 5px; /* CSS3 */
+	-webkit-border-top-right-radius: 5px; /* Safari,Google Chrome */
+	-moz-border-radius-topright: 5px; /* Firefox */
+	border-radius-bottom-left: 5px; /* CSS3 */
+	-webkit-border-bottom-left-radius: 5px; /* Safari,Google Chrome */
+	-moz-border-radius-bottomleft: 5px; /* Firefox */
+	border-radius-bottom-right: 5px; /* CSS3 */
+	-webkit-border-bottom-right-radius: 5px; /* Safari,Google Chrome */
+	-moz-border-radius-bottomright: 5px; /* Firefox */
+	font-family: Helvetica, Verdana, Tahoma, Arial;
+	font-size: 12px;
+	color: #EEEEEE;
+	}
+#author, #email, #url {
+	width: 50%;
+	}
+textarea#comment{
+	width: 450px !important;
+	height: 250px;
+	}
+/*
+#######################################
+ENTRY META
+#######################################
+*/
+#entryMeta{
+	margin-top: 15px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	color: #6A6A6A;
+	font-size: 12px;
+	text-align: justify;
+	border-top: 1px solid #E2E2E2;
+	}
+#entryMeta a{
+	color: #333333;
+	text-decoration: none;
+	}
+#entryMeta a:hover{
+	text-decoration: underline;
+	}
+#entryMeta ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	list-style: none;
+	}
+#entryMeta ul li{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 22px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-right: 0px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	}
+#entryMeta ul li#edit{
+	background-image: url(../images/icons_edit.png);
+	}
+/*
+#######################################
+Footer
+#######################################
+*/
+div#footerWrapper{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	}
+div#footer{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 60px;
+	width: 900px;
+	text-align: right;
+	color: #333333;
+	font-size: 12px;
+	font-weight: normal;
+	background-image: url(../images/base_02.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	}
+div#footer a{
+	color: #DDDDDD;
+	text-decoration: underline;
+	}
+div#footer a:hover{
+	color: #EEEEEE;
+	text-decoration: none;
+	}
+/*
+#######################################
+Scroll
+#######################################
+*/
+div#scrollWrapper{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	height: 0px;
+	}
+a#scroll{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: 440px;
+	bottom: 42px;
+	display: block;
+	overflow: hidden;
+	height: 18px;
+	width: 23px;
+	background-image: url(../images/up.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	}

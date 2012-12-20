@@ -1,0 +1,518 @@
+/*
+Theme Name: Midnight-Blue
+Theme URI: http://getfreeware.net/archives/382.html
+Description: Midnight-Blue is a free theme designed for Wordpress by <a href="http://getfreeware.net">GetFreeware.net</a>. Released under Creative Commons GNU GPL.
+Version: 1.2
+Author: gropher
+Author URI: http://getfreeware.net
+Tags: dark, two columns, widgets, blue, widget ready
+
+	The CSS, XHTML and design is released under Creative Commons GNU GPL:
+	http://creativecommons.org/licenses/GPL/2.0/
+
+*/
+
+/* begin: basic layout*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	}
+body {
+	text-align: center;
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.5em;
+	}
+	
+#page {
+	width: 95%;
+	min-width: 900px;
+	margin: 0 auto;
+	text-align: left;
+	}
+
+#header {
+	position:relative;
+	}
+
+#topnav {
+	float: right;
+	position: absolute; /*relative*/
+	right: 10px;
+	top: 10px;
+	text-align:right;
+	}
+
+#content {
+	float: left;
+	width: 65%;
+	}
+
+#sidebar {
+	float: left;
+	width: 30%;
+	}
+
+#header, #nav, #main, #footer {
+	clear: both;
+}
+
+/* end: basic layout*/
+
+/* begin: color and fonts*/
+body {
+	color: #999999;
+	background: #333333;
+	font-family: "Arial",sans-serif;
+	}
+
+.post h2 A {
+	text-decoration: underline;
+}
+.post h2, .post h2 a, .post h2 a:visited {
+	color: #999966;
+	color: #999966;
+	font-size: 1.1em;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: normal;
+	line-height: 1.5em;
+	}
+	
+
+.post h2, .post h2 a:hover {
+	color: #cc3333;
+	
+}
+
+
+.entry {
+	line-height: 1.5em;
+	text-align: left;
+	background-color: #383D44;
+	padding: 10px;
+}
+.entry p {
+	margin-top: 1.2em;
+}
+.entry a, .entry a:visited {
+	color: #993333;
+	}
+	
+.entry a:hover {
+	color: #cc3333;
+	border-bottom: 1px dotted #cc3333;
+	}
+	
+.entry ul, .entry ol {
+	margin-top: 1em;
+	margin-left: 2em;
+	
+}
+.entry ul li, .entry ol li{
+	text-indent: 2em;
+	list-style-position: inside;
+}
+
+.entry ul li{
+	list-style-type: square;
+}
+
+.metadata, .tags {
+	font-size: 12px;
+}
+.metadata {
+	margin-top: 2em;
+	}
+.tags {
+	margin-bottom: 2em;
+}
+.metadata, .metadata A, .metadata A:visited,
+.tags, .tags A, .tags A:visited {
+	color: #666666;
+	}
+	
+.metadata A:hover,
+.tags A:hover {
+	color: #cc3333;
+	}
+
+/* end: color and fonts*/
+
+/* begin: post meta data */
+
+.calendar, .author, .cat, .comments, .tags {
+	margin-right: 15px;
+	padding-left: 25px;
+}
+.calendar {
+	background: url(images/calendar.gif)  no-repeat left center;
+}
+
+.author {
+	background: url(images/author.gif)  no-repeat left center;
+}
+
+.cat {
+	background: url(images/cat.gif)  no-repeat left center;
+}
+
+.comments {
+	background: url(images/comments.gif)  no-repeat left center;
+}
+
+.tags {
+	background: url(images/tags.gif)  no-repeat left center;
+}
+
+/* end: post meta data */
+
+
+/* begin: entry */
+
+.entry {
+	text-indent: 2em;
+}
+
+blockquote {
+	margin: 2em 0.5em 2em 2em;
+	padding: 1em 0.5em 0.5em 1em;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: rgb(102, 102, 102);
+	border-right-color: rgb(0, 0, 0);
+	border-bottom-color: rgb(0, 0, 0);
+	border-left-color: rgb(102, 102, 102);
+}
+
+.entry img {
+	margin: 1em auto;
+	padding: 0.5em;
+}
+
+img.alignleft {
+        float:left;
+	margin: 1em 1em 1em auto;
+	padding: 0.5em;
+}
+
+img.alignright {
+        float:right;
+	margin: 1em auto 1em 1em;
+	padding: 0.5em;
+}
+
+/* end: entry */
+
+/* begin: nav */
+
+#nav_list {
+	float: right;
+	position:relative;
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+#nav_list li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#nav_list A {
+	display:block;
+	
+	margin:0;
+	padding:0;
+	
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform: uppercase;
+	
+	color: white;
+	
+	margin: auto 3px;
+	padding: 15px 10px;
+}
+
+#nav_list A:hover,
+#nav_list A:active,
+#nav_list li.current_page_item A{
+	color: #666666;
+	background-color: #333;
+
+}
+
+.spacer {
+	clear: both;
+	height: 1px;
+}
+/* end: nav */
+
+/* begin: sidebar */
+#sidebar {
+	margin-left: 4%;
+}
+
+#sidebar_list h2 {
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#sidebar_list {
+	margin: 10px auto;
+}
+
+#sidebar_list li {
+	list-style: none;
+	margin: 2em auto;
+}
+
+#sidebar_list li ul li{
+	margin: 0 auto;
+	padding-left: 1em;
+	background-image: url(images/bullet_black.png);
+	background-repeat: no-repeat;
+	background-position: left 5px;	
+}
+
+#sidebar_list ul {
+	padding-left: 1em;
+}
+#sidebar A {
+	color: #999966;
+}
+#sidebar A:hover {
+	color: #cc9999;
+	border-bottom: 1px dotted #cc9999;
+}
+
+#s {
+	background-color: #666666;
+	border: 1px solid #666666;
+	color: white;
+	}
+
+#searchsubmit {
+	background-color: #666666;
+	border: 1px solid #666666;
+
+	
+}
+/* end: sidebar */
+
+/* begin: topnav */
+#topnav A, #topnav A:visited {
+	color: #999966;
+	font-size: 12px;
+}
+
+#topnav A:hover {
+	color: #999966;
+	/*border-bottom: 1px dotted #999966;*/
+	text-decoration:underline;
+}
+/* begin: topnav */
+
+
+#main {
+	padding: 2em 0 0 0;
+}
+
+.post {
+	margin-bottom: 4em;
+}
+#header, #nav {
+	background-color: #383D44;
+	border: 1px solid #383D44;
+}
+
+#nav {
+	margin-top: ;
+}
+#logo {
+	margin-top: 2em;
+	margin-left: 1em;
+}
+.metadata, .tags, .entry {
+	margin-left: 3em;
+}
+#footer {
+	margin: 1em auto 0 auto;
+	padding: 1em 0 1em 0;
+	text-align: right;
+	font-family: Tahoma, Georgia, "Times New Roman", Times, serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	border-top: 1px solid #383D44;
+	line-height: 1.3em;
+}
+
+#footer A {
+	color: #999966;
+}
+#footer A:hover {
+	text-decoration:underline;
+}
+
+A {
+	color: #999966;
+}
+A:hover {
+	text-decoration:none;
+}
+
+.navigation {
+	margin-bottom: 20px;
+}
+
+.navigation .alignleft {
+	float: left;
+}
+
+.navigation .alignright {
+	float: right;
+}
+
+/* begin: single */
+.single {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #663333;
+}
+.single .entry {
+	background-color: #333333;
+}
+
+.commentlist {
+	list-style-type: none;
+	padding-left: 40px;
+}
+
+.commentlist li {
+	background-color: #666666;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.commentlist li.alt {
+	background-color: #663333;
+}
+
+.avatar {
+	float: left;
+	padding: 5px;
+	width: 40px;
+	height: 80%;
+}
+
+.avatar img {
+	margin: 0;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	border: 1px solid white;
+}
+.comment_box {
+	float: left;
+	width: 400px;
+	margin-left: 40px;
+}
+
+.comment_text {
+	padding-top: 15px;
+}
+
+.make_comment {
+	padding-left: 40px;
+}
+
+#commentform input, #commentform textarea {
+	margin: 0.5em auto;
+	color: #999999;
+	border: 1px solid #666666;	/*#666666*/
+	background-color: #383d44;
+}
+
+input#submit {
+	color: #fff;
+}
+
+/* end: single */
+
+#content, #sidebar {
+	overflow: hidden;
+}
+/* theme directory required*/
+img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.alignright {
+    padding: 4px;
+    margin: 0 0 2px 7px;
+    display: inline;
+}
+
+img.alignleft {
+    padding: 4px;
+    margin: 0 7px 2px 0;
+    display: inline;
+}
+
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+/* added for Theme Directory requirments*/
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #f3f3f3;
+	padding-top: 4px;
+	margin: 10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wp-caption img {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.wp-caption-dd {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+	margin: 0;
+}

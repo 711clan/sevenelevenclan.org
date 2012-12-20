@@ -1,0 +1,97 @@
+
+	
+.title{
+	margin: 0 0 0 0px;
+	padding: 0px 0px 0px 0px;
+
+}
+
+
+
+.boximage{
+
+	position:relative;
+	width:325px;
+	height:150px;
+}
+	
+.boximage img{
+	border:1px solid #d29903;
+}
+
+.boxtitle{
+	position:absolute;
+	bottom:0px;
+	left:1px;
+	padding:10px 10px;
+	background:url(images/trans.png) ;
+	width:305px;
+}
+.boxtitle h2{
+	font-size: 16px ;
+}
+.boximage h2 a, .boximage h2 a:link, .boximage h2 a:visited  {
+	color:#fff;
+	background-color: transparent;
+	}
+.boximage h2 a:hover  {
+	color: #228fc4;
+	background-color: transparent;
+	}	
+
+.box {
+	width:350px;
+	margin: 10px 10px 5px 0px;
+	height:100%;
+	color:#666;
+	font: 13px Tahoma, century gothic,Arial,verdana, sans-serif;
+	float:left;
+	background:#060606;
+
+
+	}
+.boxcover{
+
+	padding:10px;
+
+}
+.boxinfo{
+	width:350px;
+	height:50px;
+	background:url(images/boxinf.png) no-repeat;
+	overflow:hidden;
+	position:relative;
+
+}
+.boxmore{
+	float:left;
+	width:200px;
+	margin:5px 0px 5px 10px;
+	display:inline;
+}
+.boxauthor{
+	float:left;
+	width:200px;
+	margin:10px 0px 5px 10px;
+	color:#fff;
+	display:inline;
+}
+
+.boxcoms{
+	top:12px;
+	right:10px;
+	font-size:40px;
+	position:absolute;
+
+	
+}
+.boxcoms a:link, .boxcoms a:hover,.boxcoms a:visited{
+	color:#fff;
+}
+.videopost{
+	margin-bottom:10px;
+}
+.videopost embed{
+ width:260px;
+ height:200px;
+}
