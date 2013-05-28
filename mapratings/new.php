@@ -61,11 +61,6 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                 background:#f7fbff;
             }
         </style>
-        <script type="text/javascript" src="http://pd-cdn.net/js/jquery.1355975942.js"></script>
-        <script type="text/javascript" src="http://pd-cdn.net/js/jquery.tablesorter.1355975942.js"></script>
-        <script>
-            $(document).ready(function() { $('table').tablesorter(); });
-        </script>
     </head>
     <body>
         <h3>Select a server:</h3>
