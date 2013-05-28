@@ -5,7 +5,7 @@ define('MR_DBNAME', 'maprate3');
 
 $servers = array(
     'vsh' => array(
-        'name' => '7~11 Vs Saxton Hale | HLstatsX'
+        'name' => '7~11 Vs Saxton Hale | HLstatsX',
         'table' => 'map_ratings'
     )
 );
