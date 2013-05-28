@@ -25,14 +25,14 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
 
 ?><html>
     <head>
-        <title><?php $server ? $server['title'] . ' - ' : '' ?>Map Ratings</title>
+        <title><?php if ($server): echo $server['title'] ?> - <?php endif ?>Map Ratings</title>
     </head>
     <body>
         <h3>Select a server:</h3>
         <ul>
             <?php foreach($servers as $link => $serv): ?>
             <li><a href="?server=<?php echo $link ?>"><?php echo $serv['name'] ?></li>
-            <?php endif ?>
+            <?php endforeach ?>
         </ul>
         <?php
             if ($server):
