@@ -25,7 +25,7 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
 
 ?><html>
     <head>
-        <title><?php if ($server): echo $server['title'] ?> - <?php endif ?>Map Ratings</title>
+        <title><?php $server ? $server['title'] . ' - ' : '' ?>Map Ratings</title>
     </head>
     <body>
         <h3>Select a server:</h3>
@@ -35,7 +35,10 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
             <?php endif ?>
         </ul>
         <?php
-            if ($server)
+            if ($server):
+        ?>
+        <h1><?php echo $server['name'] ?></h1>
+        <?php
             foreach (array(
                 'All Time' => '1 = 1',
                 'Last Week' => 'rated > NOW() - INTERVAL 1 WEEK',
@@ -66,6 +69,6 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
             </tr>
             <?php endforeach ?>
         </table>
-        <?php endforeach ?>
+        <?php endforeach; endif ?>
     </body>
 </html>
