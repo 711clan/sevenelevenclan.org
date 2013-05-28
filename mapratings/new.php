@@ -28,6 +28,19 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
 ?><html>
     <head>
         <title><?php if ($server): echo $server['title'] ?> - <?php endif ?>Map Ratings</title>
+        <style type="text/css">
+            body {
+                font-family: Arial;
+                width: 800px;
+                margin: 10px auto;
+            }
+            table {
+                width: 100%;
+            }
+            th {
+                text-align: left;
+            }
+        </style>
     </head>
     <body>
         <h3>Select a server:</h3>
