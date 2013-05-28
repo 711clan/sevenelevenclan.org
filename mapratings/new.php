@@ -33,7 +33,7 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
         <h3>Select a server:</h3>
         <ul>
             <?php foreach($servers as $link => $serv): ?>
-            <li><a href="?server=<?php echo $link ?>"><?php echo $serv['name'] ?></li>
+            <li><a href="?server=<?php echo $link ?>"><?php echo $serv['name'] ?></a></li>
             <?php endforeach ?>
         </ul>
         <?php
@@ -62,14 +62,14 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                     GROUP BY map
                     ORDER BY avg DESC, votes DESC
                 ");
-                foreach ($stmt->fetch() as $row):
+                while ($row = $stmt->fetch()):
             ?>
             <tr>
                 <td><?php echo $row['votes'] ?></td>
                 <td><?php echo $row['avg'] ?></td>
                 <td><?php echo $row['map'] ?></td>
             </tr>
-            <?php endforeach ?>
+            <?php endwhile ?>
         </table>
         <?php endforeach; endif ?>
     </body>
