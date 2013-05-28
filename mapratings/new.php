@@ -62,7 +62,7 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                     GROUP BY map
                     ORDER BY avg DESC, votes DESC
                 ");
-                foreach ($stmt->fetchRow() as $row):
+                foreach ($stmt->fetch() as $row):
             ?>
             <tr>
                 <td><?php echo $row['votes'] ?></td>
