@@ -1,5 +1,7 @@
 <?php
 
+ini_set("display_errors", 1);
+
 include 'connection.php';
 define('MR_DBNAME', 'maprate3');
 
@@ -11,7 +13,7 @@ $servers = array(
 );
 
 try {
-    $db = new PDO('mysql:host=' . MR_DBNAME . ';dbname=' . MR_DBNAME, MR_DBUSER, MR_DBPASS);
+    $db = new PDO('mysql:host=' . MR_DBHOST . ';dbname=' . MR_DBNAME, MR_DBUSER, MR_DBPASS);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 } catch (PDOException $e) {
     print "SQL Error: " . $e->getMessage() . "<br/>";
