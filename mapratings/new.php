@@ -47,7 +47,7 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                 'Last Day' => 'rated > NOW() - INTERVAL 1 DAY'
             ) as $name => $where):
         ?>
-        <h4><?php echo $name ?></h4>
+        <h2><?php echo $name ?></h2>
         <table>
             <tr>
                 <th>Number of Ratings</th>
