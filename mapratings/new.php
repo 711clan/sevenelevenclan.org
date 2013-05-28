@@ -27,7 +27,7 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
 
 ?><html>
     <head>
-        <title><?php if ($server): echo $server['title'] ?> - <?php endif ?>Map Ratings</title>
+        <title><?php if ($server): echo $server['name'] ?> - <?php endif ?>Map Ratings</title>
         <style type="text/css">
             body {
                 font-family: Arial;
@@ -35,12 +35,37 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                 margin: 10px auto;
             }
             table {
+                border-top:1px solid #e5eff8;
+                border-right:1px solid #e5eff8;
+                border-collapse:collapse;
                 width: 100%;
+                margin: 20px auto;
+                font-size: 12px;
             }
+
             th {
-                text-align: left;
+                cursor: pointer;
+                background:#f4f9fe;
+                text-align:center;
+                color:#66a3d3;
+            }
+
+            td, th {
+                color: #3F4F5C;
+                border-bottom:1px solid #e5eff8;
+                border-left:1px solid #e5eff8;
+                padding: 10px;
+            }
+
+            tr:nth-child(odd) td {
+                background:#f7fbff;
             }
         </style>
+        <script type="text/javascript" src="http://pd-cdn.net/js/jquery.1355975942.js"></script>
+        <script type="text/javascript" src="http://pd-cdn.net/js/jquery.tablesorter.1355975942.js"></script>
+        <script>
+            $(document).ready(function() { $('table').tablesorter(); });
+        </script>
     </head>
     <body>
         <h3>Select a server:</h3>
@@ -63,9 +88,11 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
         <h2><?php echo $name ?></h2>
         <table>
             <tr>
-                <th>Number of Ratings</th>
-                <th>Average Rating</th>
-                <th>Map</th>
+                <thead>
+                    <th>Number of Ratings</th>
+                    <th>Average Rating</th>
+                    <th>Map</th>
+                </thead>
             </tr>
             <?php
                 $stmt = $db->query("SELECT
@@ -78,9 +105,11 @@ if (isset($_GET['server']) && isset($servers[$_GET['server']])) {
                 while ($row = $stmt->fetch()):
             ?>
             <tr>
-                <td><?php echo $row['votes'] ?></td>
-                <td><?php echo $row['avg'] ?></td>
-                <td><?php echo $row['map'] ?></td>
+                <tbody>
+                    <td><?php echo $row['votes'] ?></td>
+                    <td><?php echo $row['avg'] ?></td>
+                    <td><?php echo $row['map'] ?></td>
+                </tbody>
             </tr>
             <?php endwhile ?>
         </table>
